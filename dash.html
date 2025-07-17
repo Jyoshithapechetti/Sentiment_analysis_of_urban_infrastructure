@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+<title>UrbanScape</title>
+<link rel="stylesheet" href="graph.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="dash.css">
+    </head>
+    <script src="graph.js" defer></script>
+<script src="nav.js"></script>
+
+    <body>
+      <header class="container">
+        <a href="#hero" class="logo clr-transition">UrbanScape</a>
+        <nav class="navbar">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#hero" class="nav-link clr-transition">Review</a></li>
+            <li class="nav-item"><a href="#products" class="nav-link clr-transition">Graphs</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link clr-transition">About</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link clr-transition">Contact</a></li>
+          </ul>
+          <div class="social-links">
+            <ul>
+              <a href="https://www.instagram.com/mui_cept/"><li ><i class='bx bxl-instagram nav-icon clr-transition'></i></li></a>
+              <a href="https://x.com/mohua_india?lang=en"><li><i class='bx bxl-twitter nav-icon clr-transition'></i></li></a>
+              <a href="https://www.facebook.com/UrbanInfraGroupIndia/"><li><i class='bx bxl-facebook nav-icon clr-transition'></i></li></a>
+            </ul>
+            <span class="line-divider clr-transition"></span>
+            <div class="theme-togglers">
+              <i class='bx bxs-sun theme-toggler clr-transition'></i>
+              <i class='bx bxs-moon theme-toggler clr-transition'></i>
+            </div>
+          </div>
+        </nav>
+
+        <div class="menu-togglers">
+          <i class="bx bx-menu menu-toggle clr-transition"></i>
+        </div>
+      </header>
+      <main id="hero" class="main">
+        <section class="section section-one">
+          <div class="container hook-container">
+            <h4 class="hook-title clr-transition">NLP in Urban infrastructure</h4>
+            <h2 class="hook-sub_title clr-transition">Explore how Sentiment Analysis can provide insights on urban infrastructure <br>by analyzing public opinions and reviews on city facilities, services, and development.</h2>
+            <div class="hero-btns-container">
+              <a href="http://127.0.0.1:5000/">
+                <button class="button btn-hero btn-primary buy-hero-btn">Add your review</button>
+              </a>
+            </div>
+          </div>
+          <img src="" alt="" class="hand-hole-cake-img" loading="lazy">
+          <img src="homepg1.jpg" alt="" class="hero-lady-img" loading="lazy" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 60%; height: auto; max-width: 600px; border-radius: 50%;">
+        </section>
+        
+
+        <!-- --- section two --- -->
+        <section id="products" class="section section-two container">
+         
+
+          <center><div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+              <li class="card">
+                <div class="img"><img src="line_plot.jpg" alt="img" draggable="false"></div>
+                <h2>Line plot</h2>
+                <span></span>
+                <span><button class="button"><a href="sentiment_analysis_line_plot.html" style="text-decoration: none; color: white;">Line Plot</a></button></span>
+              </li> 
+              <li class="card">
+                <div class="img"><img src="pie_plot.jpg" alt="img" draggable="false"></div>
+                <h2>pie plots</h2>
+                <span></span>
+                <span><button class="button"><a href="sentiment_pie_charts_all_places.html" style="text-decoration: none; color: white;">pie plots</a></button></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="Sent_distri_by_emotion.jpeg" alt="img" draggable="false"></div>
+                <h2>Sentiment distribution by emotion</h2>
+                <span></span>
+                <span><button class="button"><a href="sentiment_distribution_by_emotion.html" style="text-decoration: none; color: white;" >Sentiment distribution by emotion</a></button></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="heatmaps.jpeg" alt="img" draggable="false"></div>
+                <h2>Heat Maps</h2>
+                <span></span>
+                <span><button class="button"><a href="sentiment_heatmap.html" style="text-decoration: none; color: white;">Heat Maps</a></button></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="bar_plot.jpg" alt="img" draggable="false"></div>
+                <h2>Bar plot</h2>
+                <span></span>
+                <span><button class="button"><a href="topic_model_bar_plot.html" style="text-decoration: none; color: white;">Bar plot</a></button></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="distribution_by_place.jpg" alt="img" draggable="false"></div>
+                <h2>Sentiment distribution by place</h2>
+                <span></span>
+                <span><button class="button"><a href="sentiment_distribution_by_place.html" style="text-decoration: none; color: white;">Sentiment distribution by place</a></button></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="distribution_by_emotion_count.jpg" alt="img" draggable="false"></div>
+                <h2>Emotion distribution by count</h2>
+                <span></span>
+                <span><button class="button"><a href="emotion_distribution.html" style="text-decoration: none; color: white;">Emotion distribution by count</a></button></span>
+              </li>
+              
+              
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        </center>
+      </section>
+
+      <!-- section three -->
+      <!-- <section id="about" class="section section-three container">
+        <div class="s-three-content-container">
+          <div class="s-three-img-container">
+            <img src="knwo_more.jpg" alt="" loading="lazy" class="s-three-img">
+          </div>
+          <div class="s-three-text-container">
+            <h3 class="s-three-title">Sentiment Analysis and Urban Infrastructure: Understanding Public Opinion</h3>
+            <p class="s-three-desc s-definition">
+  Urban infrastructure plays a vital role in shaping the quality of life for residents and visitors. With growing urbanization and the complexity of city planning, understanding the public's sentiment towards infrastructure developments, services, and maintenance is crucial for creating smarter, more livable cities. This is where Sentiment Analysis comes into play.
+  
+  Sentiment Analysis can process vast amounts of feedback from residents, identifying positive, neutral, or negative sentiments towards urban infrastructure projects. By leveraging AI-powered tools, cities can gain deeper insights into public perception, allowing them to address concerns, improve services, and prioritize projects that matter most to the community.
+</p>
+            <span class="s-three-price">Early detection and a healthy lifestyle are key to prevention.</span>
+            <a href="https://portal.nifa.usda.gov/web/crisprojectpages/1024262-ai-institute-next-generation-food-systems.html">
+              <button class="button ad-buy-btn">Know More</button>
+            </a>
+          </div>
+        </div>
+      </section>  -->
+
+      <!-- section three -->
+      <section id="about" class="section section-three container">
+        <div class="s-three-container" style="display: flex; align-items: center; justify-content: space-between; gap: 300px;">
+          <!-- Image Container -->
+          <div class="s-three-upper-img-container" style="flex: 2;">
+            <img src="urban_infra.png" alt="" loading="lazy" style="width: 100%; max-width: 700px; height: auto; ">
+          </div>
+          <!-- Text Container -->
+          <div class="s-three-lower-container" style="flex: 2;">
+            <h3 class="s-three-title">Sentiment Analysis and Urban Infrastructure: Understanding Public Opinion</h3>
+            <p class="s-three-desc s-definition" style="font-size: medium;">
+              Urban infrastructure plays a vital role in shaping the quality of life for residents and visitors. With growing urbanization and the complexity of city planning, understanding the public's sentiment towards infrastructure developments, services, and maintenance is crucial for creating smarter, more livable cities. This is where Sentiment Analysis comes into play.
+            </p>
+            <p class="s-three-desc s-definition" style="font-size: medium;">
+              Sentiment Analysis can process vast amounts of feedback from residents, identifying positive, neutral, or negative sentiments towards urban infrastructure projects. By leveraging AI-powered tools, cities can gain deeper insights into public perception, allowing them to address concerns, improve services, and prioritize projects that matter most to the community.
+            </p>
+            <span class="s-three-price">Analyzing public sentiment for smarter urban development.</span>
+            <br>
+            <div class="button-container">
+              <a href="https://www.india.gov.in/topics/infrastructure/urban">
+                  <button class="button ad-buy-btn">Know More</button>
+              </a>
+              <a href="summary.html">
+                  <button class="button ad-buy-btn">Summary</button>
+              </a>
+          </div>
+          </div>
+        </div>
+      </section>
+            
+      
+
+
+        </section>
+
+        
+        
+       
+        
+      </main>
+      <footer id="contact" class="footer container">
+        <footer id="contact" class="footer container">
+          <h2 class="footer-title" style="margin-bottom: 10px;">Contact us</h2>
+          <a href="contact_us.html"><button class="button ad-buy-btn promo-btn" style="margin-bottom: 20px; margin-top: 5px;">Know More</button></a>
+  
+
+        <div class="other-footer-infos-container">
+          <span class="footer-info"><i class="bx bx-map"></i> AMRITA</span>
+          <span class="footer-info"><i class="bx bx-phone"></i> +91 9113845480</span>
+          <span class="footer-info"><i class="bx bx-mail-send"></i>NLP_project@gmail.com</span>
+          <div class="footer-social-links">
+            <ul>
+              <a href="https://www.instagram.com/mui_cept/?hl=en"><li><i class='bx bxl-instagram-alt nav-icon clr-transition'></i></li></a>
+              <a href="https://x.com/mohua_india?lang=en"><li><i class='bx bxl-twitter nav-icon clr-transition'></i></li></a>
+              <a href="https://www.facebook.com/UrbanInfraGroupIndia/"><li><i class='bx bxl-facebook-square nav-icon clr-transition'></i></li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="lower-footer">
+          <span class="lower-footer-elt copy">copyright © 2024 UrbanScape</span>
+          <span class="lower-footer-elt developer">Developed by <a href="dash.html" class="developerportfoliolink" title="developer portfolio link">Group 9</a></span>
+          <span class="lower-footer-elt policy"><a href="#" class="policy-link">Privacy • Policy</a></span>
+        </div>
+
+      </footer>
+      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+      <script src="dash.js"></script>
+    </body>
+</html>

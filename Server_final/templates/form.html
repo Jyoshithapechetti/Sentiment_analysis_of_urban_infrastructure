@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adulteration Detection Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fefefe;
+      font-size: 16px;
+    }
+    select:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Public Review </h2>
+    <form action="/submit" method="post">
+      <div class="form-group">
+        <label for="Place"></label>
+        <select id="Place" name="Place" required>
+        <option value="">Select</option>
+          <option value="park">Park</option>
+          <option value="Schools">Schools</option>
+          <option value="Hospital">Hospital</option>
+          <option value="railways">Railways</option>
+          <option value="Airport">Airport</option>
+          <option value="Toilets">Toilets</option>
+          <option value="bridges">Bridges</option>
+          <option value="Roads">Roads</option>
+          <option value="Water Supply">Water Supply</option>
+          <option value="electricity">Electricity</option>
+          <option value="Sewage system">Sewage system</option>
+          <option value="Metro">Metro</option>
+          <option value="Public trains">Public trains</option>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="Label">Label</label>
+        <select id="Label" name="Label" required>
+            <option value="">Select</option>
+          <option value="Positive">Positive</option>
+          <option value="Negative">Negative</option>
+       </select>
+      </div>
+      <div class="form-group">
+        <label for="Review">Write your comment:</label>
+        <textarea id="Review" name="Review" required placeholder="Enter your review here"></textarea>
+    </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
